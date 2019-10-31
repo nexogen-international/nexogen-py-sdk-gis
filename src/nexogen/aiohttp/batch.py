@@ -16,8 +16,8 @@ import aiohttp
 import asyncio
 import logging
 
-MAX_CONNECTION: int = 1000
-MAIN_QUEUE_SIZE: int = 2000
+MAX_CONNECTION: int = 100
+MAIN_QUEUE_SIZE: int = 200
 DLQ_SLEEP_SECONDS: int = 5
 DLQ_CONSUMER_NUM: int = 20
 HTTP_STATUS_CODES_TO_RETRY = [500, 502, 503, 504]
