@@ -111,4 +111,5 @@ venv.bak/
 dmypy.json
 
 # Test data
-data/batch_geocoding_test_addresses.txt
+data/*.txt
+data/*.csv

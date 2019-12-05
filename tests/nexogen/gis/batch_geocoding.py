@@ -39,7 +39,7 @@ async def main(loop) -> None:
     gis_api_key: str = os.environ.get('NEXOGEN_GIS_API_KEY')
     gis_provider: str = os.environ.get('NEXOGEN_GIS_PROVIDER', default='ptv')
     addresses = []
-    with open('data/batch_geocoding_test_addresses.txt', encoding='utf-8') as f:
+    with open('data/batch_geocoding_addresses.csv', encoding='utf-8') as f:
         addresses = f.readlines()
     query_count = len(addresses)
     http_request_parameters_factory = GisBatchGeocodingHttpRequestParametersFactory(
